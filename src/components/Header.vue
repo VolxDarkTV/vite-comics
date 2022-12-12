@@ -73,7 +73,7 @@
         <!-- Links -->
         <ul>
             <li v-for="(link, index) in links" :key="index" @click="linkSelect(index)">
-                <a :class="active === index ? 'active' : ''" href="#">{{link.text}}</a>
+                <a :class="active === index ? 'active' : ''" :href="link.url">{{link.text}}</a>
                 <div class="under_line" :class="active === index ? 'active_under_line' : ''"></div>
             </li>
         </ul>
