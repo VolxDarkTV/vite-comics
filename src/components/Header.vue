@@ -92,7 +92,7 @@
         // Links
         & ul{
             display: flex;
-            gap: 10px;
+            gap: 30px;
             list-style: none;
             // effetto under-line
             & li:hover .under_line{
