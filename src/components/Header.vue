@@ -2,39 +2,66 @@
     export default{
         data(){
             return{
+                active: 0,
                 links: [
                     {
-                        text: 'CHARACTERS'
+                        text: 'CHARACTERS',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'COMICS'
+                        text: 'COMICS',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'MOVIES'
+                        text: 'MOVIES',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'TV'
+                        text: 'TV',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'GAMES'
+                        text: 'GAMES',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'COLLECTIBLES'
+                        text: 'COLLECTIBLES',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'VIDEOS'
+                        text: 'VIDEOS',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'FANS'
+                        text: 'FANS',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'NEWS'
+                        text: 'NEWS',
+                        url: '#',
+                        current: false,
                     },
                     {
-                        text: 'SHOP'
+                        text: 'SHOP',
+                        url: '#',
+                        current: false,
                     },
                 ]
             }
+        },
+        methods:{
+            linkSelect (index) {    
+                let x = index;
+                this.active = x;
+            },
         }
     }
 </script>
@@ -45,9 +72,9 @@
 
         <!-- Links -->
         <ul>
-            <li v-for="(link, index) in links">
-                <a href="">{{link.text}}</a>
-                <div class="under-line"></div>
+            <li v-for="(link, index) in links" :key="index" @click="linkSelect(index)">
+                <a :class="active === index ? 'active' : ''" href="#">{{link.text}}</a>
+                <div class="under_line" :class="active === index ? 'active_under_line' : ''"></div>
             </li>
         </ul>
     </div>
@@ -68,7 +95,7 @@
             gap: 10px;
             list-style: none;
             // effetto under-line
-            & li:hover .under-line{
+            & li:hover .under_line{
                 background-color: #0282f9;
             } 
             // colore testo
@@ -76,10 +103,21 @@
                 text-decoration: none;
                 color: #5f7080;
             }
+            .under_line{
+                // width: 100%;
+                height: 5px;
+            }
         }
-    }
-    .under-line{
-        width: 100%;
-        height: 5px;
+
+
+        // ACTIVE CLASS
+        .active{
+            color: #0282f9;
+        }
+        .active_under_line{
+            width: 100%;
+            height: 5px;
+            background-color: #0282f9;
+        }
     }
 </style>
