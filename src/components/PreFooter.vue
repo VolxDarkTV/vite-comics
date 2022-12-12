@@ -59,6 +59,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            cursor: pointer;
 
             & div{
                 width: 80px;

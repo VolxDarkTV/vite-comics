@@ -87,7 +87,7 @@
         align-items: center;
         justify-content: space-around;
         // DEBUG
-        background-color: yellow;
+        background-color: #fff;
 
         // Links
         & ul{
