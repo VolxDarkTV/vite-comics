@@ -3,6 +3,7 @@
   import Header from './components/Header.vue'
   import MainPage from './components/MainPage.vue'
   import PreFooter from './components/PreFooter.vue'
+  import Footer from './components/Footer.vue'
 
 
   export default{
@@ -10,6 +11,7 @@
       Header,
       MainPage,
       PreFooter,
+      Footer,
     }
   }
 </script>
@@ -19,6 +21,7 @@
  <Header/>
  <MainPage/>
  <PreFooter/>
+ <Footer/>
 </template>
 
 <!-- Diamo uno stile ai components -->
