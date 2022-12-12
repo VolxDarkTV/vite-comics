@@ -1,5 +1,13 @@
 <script>
+
+    // Import SignUp
+    import SignUp from './SignUp.vue'
+
+
     export default{
+        components:{
+            SignUp,
+        },
         data(){
             return{
                 active: 0,
@@ -140,7 +148,9 @@
             </ul>
         </div>
 
+        <SignUp/>
     </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -175,6 +185,8 @@
         // colore testo
         & h4{
             margin: 20px 0;
+            font-size: 20px;
+            font-weight: 900;
         }
         & a{
             text-decoration: none;
