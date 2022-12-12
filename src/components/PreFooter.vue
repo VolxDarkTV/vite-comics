@@ -61,6 +61,10 @@
             gap: 10px;
             cursor: pointer;
 
+            &:hover{
+                background-color: #1688f2;
+            }
+
             & div{
                 width: 80px;
                 height: 80px;
