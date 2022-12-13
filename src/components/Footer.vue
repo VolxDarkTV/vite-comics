@@ -57,6 +57,107 @@
                         url: '#',
                         current: false,
                     },
+                ],
+                DcShops:[
+                    {
+                        text: 'SHOP DC',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'SHOP DC COLLECTIBLES',
+                        url: '#',
+                        current: false,
+                    },
+                ],
+                DcLinks:[
+                    {
+                        text: 'TERMS OF USE',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'PRIVACY POLICY (NEW)',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'AD CHOICES',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'ADVERTISING',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'JOBS',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'SUBSCRIPTIONS',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'TALENT WORKSHOPS',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'CSPC CERTIFICATES',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'RATINGS',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'SHOP HELP',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'CONTACT US',
+                        url: '#',
+                        current: false,
+                    },
+                ],
+                sites:[
+                    {
+                        text: 'DC',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'MAD',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'MAGAZINE',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'DC KIDS',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'DC UNIVERSE',
+                        url: '#',
+                        current: false,
+                    },
+                    {
+                        text: 'DC POWER VISA',
+                        url: '#',
+                        current: false,
+                    },
                 ]
             }
         },
@@ -85,66 +186,21 @@
                     </ul>
                     <ul>
                        <h4>SHOP</h4>
-                       <li>
-                            <a href="">SHOP DC</a>
-                       </li>
-                       <li>
-                            <a href="">SHOP DC COLLECTIBLES</a>
+                       <li v-for="(DcShop, index) in DcShops" :key="index">
+                            <a href="">{{DcShop.text}}</a>
                        </li>
                     </ul>
                 </div>
                 <ul>
                     <h4>DC</h4>
-                    <li>
-                        <a href="">TERMS OF USE</a>
-                    </li>
-                    <li>
-                        <a href="">PRIVACY POLICY (NEW)</a>
-                    </li>
-                    <li>
-                        <a href="">AD CHOICES</a>
-                    </li>
-                    <li>
-                        <a href="">ADVERTISING</a>
-                    </li>
-                    <li>
-                        <a href="">JOBS</a>
-                    </li>
-                    <li>
-                        <a href="">SUBSCRIPTIONS</a>
-                    </li>
-                    <li>
-                        <a href="">TALENT WORKSHOPS</a>
-                    </li>
-                    <li>
-                        <a href="">CPSC CERTIFICATES</a>
-                    </li>
-                    <li>
-                        <a href="">RATINGS</a>
-                    </li>
-                    <li>
-                        <a href="">SHOP HELP</a>
-                    </li>
-                    <li>
-                        <a href="">CONTACT US</a>
+                    <li v-for="(DcLink, index) in DcLinks" :key="index">
+                        <a href="">{{DcLink.text}}</a>
                     </li>
                 </ul>
                 <ul>
                     <h4>SITES</h4>
-                    <li>
-                        <a href="">DC</a>
-                    </li>
-                    <li>
-                        <a href="">MAD MAGAZINE</a>
-                    </li>
-                    <li>
-                        <a href="">DC KIDS</a>
-                    </li>
-                    <li>
-                        <a href="">DC UNIVERSE</a>
-                    </li>
-                    <li>
-                        <a href="">DC POWER VISA</a>
+                    <li v-for="(site, index) in sites" :key="index">
+                        <a href="">{{site.text}}</a>
                     </li>
                 </ul>
             </div>
@@ -177,13 +233,13 @@
     .left_side{
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 50px;
         width: 50%;
     }
 
     // Links
     ul{
-        gap: 30px;
+        // gap: 30px;
         list-style: none;
         // colore testo
         & h4{
@@ -194,6 +250,7 @@
         & a{
             text-decoration: none;
             color: #5f7080;
+            font-size: 14px;
 
             &:hover{
                 text-decoration: underline;
