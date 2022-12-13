@@ -12,13 +12,14 @@
       MainPage,
       PreFooter,
       Footer,
-    }
+    },
+    
   }
 </script>
 
 <!-- Diamo una struttura ai components -->
 <template>
- <Header/>
+ <Header />
  <MainPage/>
  <PreFooter/>
  <Footer/>

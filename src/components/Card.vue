@@ -25,5 +25,9 @@
         &:hover{
             background-color: $brand_primary;
         }
+
+        & h3{
+            padding-top: 10px;
+        }
     }
 </style>
