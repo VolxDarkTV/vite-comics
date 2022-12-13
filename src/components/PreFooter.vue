@@ -50,7 +50,7 @@
 <style lang="scss" scoped>
     @use '../styles/general.scss' as *;
     .main_container{
-        background-color: #0282f9;
+        background-color: $brand_primary;
     }
     .container{
         display: flex;
@@ -58,7 +58,7 @@
         justify-content: center;
         gap: 60px;
         height: 200px;
-        background-color: #0282f9;
+        background-color: $brand_primary;
 
         & a{
             width: 200px;

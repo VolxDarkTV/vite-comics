@@ -71,7 +71,7 @@
         width: 80%;
     }
     #sign_up{
-        border: #0282f9 solid 2px;
+        border: $brand_primary solid 2px;
         padding: 12px;
         cursor: pointer;
 
@@ -86,7 +86,7 @@
         gap: 20px;
 
         & div{
-            color: #0282f9;
+            color: $brand_primary;
         }
         
         & ul{

@@ -93,7 +93,7 @@
         height: 150px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: #fff;
 
         // Links
@@ -108,7 +108,7 @@
             }
             & li:hover .under_line{
                 width: 100%;
-                background-color: #0282f9;
+                background-color: $brand_primary;
                 transition: all 0.1s ease;
             } 
             // colore testo
@@ -122,12 +122,12 @@
 
         // ACTIVE CLASS
         .active{
-            color: #0282f9;
+            color: $brand_primary;
         }
         .active_under_line{
             width: 100%;
             height: 5px;
-            background-color: #0282f9;
+            background-color: $brand_primary;
         }
     }
 </style>
