@@ -21,7 +21,7 @@ import { def } from '@vue/shared';
         flex-basis: 25%;
         padding: 20px;
         // background-color: white;
-        border: solid blue 2px;
+        // border: solid blue 2px;
         display: flex;
         flex-direction: column;
 
