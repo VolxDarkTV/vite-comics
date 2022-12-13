@@ -67,26 +67,32 @@
 </script>
 
 <template>
-    <div class="container">
-        <img src="../../public/img/dc-logo.png" alt="">
-
-        <!-- Links -->
-        <ul>
-            <li v-for="(link, index) in links" :key="index" @click="linkSelect(index)">
-                <a :class="active === index ? 'active' : ''" :href="link.url">{{link.text}}</a>
-                <div class="under_line" :class="active === index ? 'active_under_line' : ''"></div>
-            </li>
-        </ul>
-    </div>
+    <section class="main_container">
+        <div class="container">
+            <img src="../../public/img/dc-logo.png" alt="">
+    
+            <!-- Links -->
+            <ul>
+                <li v-for="(link, index) in links" :key="index" @click="linkSelect(index)">
+                    <a :class="active === index ? 'active' : ''" :href="link.url">{{link.text}}</a>
+                    <div class="" :class="active === index ? 'active_under_line' : 'under_line'"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
+    .main_container{
+        background-color: #fff;
+    }
     .container{
+        margin: 0 auto;
+        max-width: 1500px;
         height: 150px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        // DEBUG
         background-color: #fff;
 
         // Links
@@ -95,18 +101,21 @@
             gap: 30px;
             list-style: none;
             // effetto under-line
+            .under_line{
+                width: 0%;
+                height: 5px;
+            }
             & li:hover .under_line{
+                width: 100%;
                 background-color: #0282f9;
+                transition: all 0.1s ease;
             } 
             // colore testo
             & a{
                 text-decoration: none;
                 color: #5f7080;
             }
-            .under_line{
-                // width: 100%;
-                height: 5px;
-            }
+            
         }
 
 
