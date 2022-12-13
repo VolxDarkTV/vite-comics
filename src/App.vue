@@ -25,7 +25,8 @@
 </template>
 
 <!-- Diamo uno stile ai components -->
-<style lang="scss" scoped>
+<style lang="scss">
+  @use './styles/general.scss' as *;
 
 
 </style>
