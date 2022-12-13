@@ -31,26 +31,33 @@
 
 
 <template>
-    <div class="container">
-
-        <a v-for="(miniPage, index) in miniPages">
-            <div>
-                <img :src="miniPage.img" alt="#">
-            </div>
-
-            <p>{{miniPage.text}}</p>
-        </a>
-
-    </div>
+    <section class="main_container">
+        <div class="container">
+    
+            <a v-for="(miniPage, index) in miniPages">
+                <div>
+                    <img :src="miniPage.img" alt="#">
+                </div>
+    
+                <p>{{miniPage.text}}</p>
+            </a>
+    
+        </div>
+    </section>
 </template>
 
 
 <style lang="scss" scoped>
+    .main_container{
+        background-color: #0282f9;
+    }
     .container{
+        margin: 0 auto;
+        max-width: 1500px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 60px;
         height: 200px;
         background-color: #0282f9;
 
