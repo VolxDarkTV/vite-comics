@@ -1,5 +1,4 @@
 <script>
-import { def } from '@vue/shared';
 
     export default{
         props:{
@@ -17,16 +16,12 @@ import { def } from '@vue/shared';
 </template>
 
 <style lang="scss" scoped>
-     @use '../styles/general.scss' as *;
+    @use '../styles/general.scss' as *;
     .card{
-        flex-basis: 25%;
-        padding: 20px;
-        // background-color: white;
-        // border: solid blue 2px;
+        flex-basis: calc(25% - 20px);
         display: flex;
         flex-direction: column;
         cursor: pointer;
-
         &:hover{
             background-color: $brand_primary;
         }
