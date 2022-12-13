@@ -85,12 +85,11 @@
 </template>
 
 <style lang="scss" scoped>
+    @use '../styles/general.scss' as *;
     .main_container{
         background-color: #fff;
     }
     .container{
-        margin: 0 auto;
-        max-width: 1500px;
         height: 150px;
         display: flex;
         align-items: center;

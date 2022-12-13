@@ -71,7 +71,7 @@
 
 <template>
     <section class="background">
-        <section class="main_container">
+        <section class="container">
             <div class="logo"></div>
     
             <div class="left_side">
@@ -156,6 +156,7 @@
 </template>
 
 <style lang="scss" scoped>
+    @use '../styles/general.scss' as *;
     .background{
         position: relative;
         width: 100vw;
@@ -163,10 +164,6 @@
         background-image: url(../../public/img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    .main_container{
-        margin: 0 auto;
-        max-width: 1500px;
     }
     .logo{
         position: absolute;

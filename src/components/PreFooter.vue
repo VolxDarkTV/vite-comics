@@ -48,12 +48,11 @@
 
 
 <style lang="scss" scoped>
+    @use '../styles/general.scss' as *;
     .main_container{
         background-color: #0282f9;
     }
     .container{
-        margin: 0 auto;
-        max-width: 1500px;
         display: flex;
         align-items: center;
         justify-content: center;

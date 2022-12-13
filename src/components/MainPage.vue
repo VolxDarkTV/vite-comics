@@ -11,12 +11,13 @@
 </template>
 
 <style lang="scss" scoped>
+    @use '../styles/general.scss' as *;
     .main_container{
         background-color: #242424;
     }
     .container{
-        margin: 0 auto;
-        max-width: 1500px;
+        // DEBUG
+        background-color: teal;
     }
     h2{
         text-align: center;

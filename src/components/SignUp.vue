@@ -30,8 +30,8 @@
 </script>
 
 <template>
-    <section class="container">
-        <div class="internal_container">
+    <section class="total_container">
+        <div class="container internal_container">
             <div id="sign_up">
                 <h4>SIGN-UP NOW!</h4>
             </div>
@@ -52,7 +52,8 @@
 </template>
 
 <style lang="scss" scoped>
-    .container{
+    @use '../styles/general.scss' as *;
+    .total_container{
         display: flex;
         align-items: center;
         justify-content: center;
