@@ -68,7 +68,7 @@
             cursor: pointer;
 
             &:hover{
-                background-color: #1688f2;
+                background-color: $brand_secondary;
             }
 
             & div{

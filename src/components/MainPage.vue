@@ -156,7 +156,7 @@
         cursor: pointer;
 
         &:hover{
-            background-color: #2988e2;
+            background-color: $brand_secondary;
             border: solid #fff 2px;
         }
     }
