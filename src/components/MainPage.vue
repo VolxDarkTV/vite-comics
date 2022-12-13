@@ -141,6 +141,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 50px;
+        gap: 20px;
     }
     #load_more_button{
         margin: 20px auto;
