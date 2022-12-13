@@ -17,6 +17,7 @@ import { def } from '@vue/shared';
 </template>
 
 <style lang="scss" scoped>
+     @use '../styles/general.scss' as *;
     .card{
         flex-basis: 25%;
         padding: 20px;
@@ -24,6 +25,10 @@ import { def } from '@vue/shared';
         // border: solid blue 2px;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
 
+        &:hover{
+            background-color: $brand_primary;
+        }
     }
 </style>
