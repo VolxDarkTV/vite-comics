@@ -69,7 +69,9 @@
 <template>
     <section class="main_container">
         <div class="container">
-            <img src="../../public/img/dc-logo.png" alt="">
+            <div>
+                <img src="../../public/img/dc-logo.png" alt="">
+            </div>
     
             <!-- Links -->
             <ul>
