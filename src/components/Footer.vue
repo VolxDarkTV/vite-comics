@@ -187,20 +187,20 @@
                     <ul>
                        <h4>SHOP</h4>
                        <li v-for="(DcShop, index) in DcShops" :key="index">
-                            <a href="">{{DcShop.text}}</a>
+                            <a :href="DcShop.url">{{DcShop.text}}</a>
                        </li>
                     </ul>
                 </div>
                 <ul>
                     <h4>DC</h4>
                     <li v-for="(DcLink, index) in DcLinks" :key="index">
-                        <a href="">{{DcLink.text}}</a>
+                        <a :href="DcLink.url">{{DcLink.text}}</a>
                     </li>
                 </ul>
                 <ul>
                     <h4>SITES</h4>
                     <li v-for="(site, index) in sites" :key="index">
-                        <a href="">{{site.text}}</a>
+                        <a :href="site.url">{{site.text}}</a>
                     </li>
                 </ul>
             </div>
