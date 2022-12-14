@@ -93,11 +93,11 @@
         <!-- Jumbotron -->
         <div id="jumbotron">
             
-            <div class="container">
-                <div id="current_series_button">
-                    <h2>CURRENT SERIES</h2>
-                </div>
-            </div>
+          <div class="container">
+              <div id="current_series_button">
+                  <h2>CURRENT SERIES</h2>
+              </div>
+          </div>
 
         </div>
 

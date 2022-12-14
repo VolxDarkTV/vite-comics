@@ -18,7 +18,7 @@
 <style lang="scss" scoped>
     @use '../styles/general.scss' as *;
     .card{
-        flex-basis: calc(25% - 20px);
+        flex-basis: calc(100% / 6 - 20px);
         display: flex;
         flex-direction: column;
         cursor: pointer;

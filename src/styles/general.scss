@@ -1,3 +1,4 @@
+// @use './partials/variables.scss' as *;
 *{
     margin: 0;
     padding: 0;
@@ -20,9 +21,10 @@
     -webkit-text-size-adjust: 100%;
   }
   
+  $brand_primary: #0282f9;
+  $brand_secondary: #1688f2;
+  
 
-$brand_primary: #0282f9;
-$brand_secondary: #1688f2;
 
 img{
     width: 100%;
